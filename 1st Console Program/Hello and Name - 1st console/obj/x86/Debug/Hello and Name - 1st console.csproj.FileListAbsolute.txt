@@ -1,0 +1,9 @@
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Hello and Name - 1st console\Hello and Name - 1st console\bin\Debug\Hello and Name - 1st console.exe
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Hello and Name - 1st console\Hello and Name - 1st console\bin\Debug\Hello and Name - 1st console.pdb
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Hello and Name - 1st console\Hello and Name - 1st console\obj\x86\Debug\Hello and Name - 1st console.exe
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Hello and Name - 1st console\Hello and Name - 1st console\obj\x86\Debug\Hello and Name - 1st console.pdb
+H:\My Documents\Visual Studio 2010\Projects\1st Console Program\Hello and Name - 1st console\obj\x86\Debug\Hello and Name - 1st console.exe
+H:\My Documents\Visual Studio 2010\Projects\1st Console Program\Hello and Name - 1st console\obj\x86\Debug\Hello and Name - 1st console.pdb
+H:\My Documents\Visual Studio 2010\Projects\1st Console Program\Hello and Name - 1st console\bin\Debug\Hello and Name - 1st console.exe
+H:\My Documents\Visual Studio 2010\Projects\1st Console Program\Hello and Name - 1st console\bin\Debug\Hello and Name - 1st console.pdb
+H:\My Documents\Visual Studio 2010\Projects\1st Console Program\Hello and Name - 1st console\obj\x86\Debug\Hello and Name - 1st console.csprojResolveAssemblyReference.cache
