@@ -1,0 +1,8 @@
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Challenge Console\Challenge Console\bin\Debug\Challenge Console.exe
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Challenge Console\Challenge Console\bin\Debug\Challenge Console.pdb
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Challenge Console\Challenge Console\obj\x86\Debug\Challenge Console.exe
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Challenge Console\Challenge Console\obj\x86\Debug\Challenge Console.pdb
+H:\My Documents\Visual Studio 2010\Projects\Challenge Console\Challenge Console\obj\x86\Debug\Challenge Console.exe
+H:\My Documents\Visual Studio 2010\Projects\Challenge Console\Challenge Console\obj\x86\Debug\Challenge Console.pdb
+H:\My Documents\Programming 2\Challenge Console\Challenge Console\obj\x86\Debug\Challenge Console.exe
+H:\My Documents\Programming 2\Challenge Console\Challenge Console\obj\x86\Debug\Challenge Console.pdb
