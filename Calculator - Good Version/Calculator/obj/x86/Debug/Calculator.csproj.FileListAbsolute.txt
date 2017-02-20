@@ -1,0 +1,25 @@
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\bin\Debug\Calculator.exe
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\bin\Debug\Calculator.pdb
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.Calculator.resources
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.exe
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.pdb
+H:\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.exe
+H:\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.pdb
+H:\My Documents\Programming 2\Calculator\Calculator\bin\Debug\Calculator.exe
+H:\My Documents\Programming 2\Calculator\Calculator\bin\Debug\Calculator.pdb
+H:\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.Calculator.resources
+H:\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
+H:\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache
+H:\My Documents\Programming 2\Calculator\Calculator\obj\x86\Debug\Calculator.csprojResolveAssemblyReference.cache
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\obj\x86\Debug\Calculator.exe
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\obj\x86\Debug\Calculator.pdb
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\bin\Debug\Calculator.exe
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\bin\Debug\Calculator.pdb
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\obj\x86\Debug\Calculator.csprojResolveAssemblyReference.cache
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\obj\x86\Debug\Calculator.Calculator.resources
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\obj\x86\Debug\Calculator.Properties.Resources.resources
+H:\My Documents\Programming 2\Calculator - Copy\Calculator\obj\x86\Debug\Calculator.csproj.GenerateResource.Cache
+H:\My Documents\Programming 2\Unit 1\Calculator - Good Version\Calculator\obj\x86\Debug\Calculator.exe
+H:\My Documents\Programming 2\Unit 1\Calculator - Good Version\Calculator\obj\x86\Debug\Calculator.pdb
