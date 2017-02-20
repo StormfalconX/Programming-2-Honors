@@ -1,0 +1,7 @@
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.exe
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.pdb
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\obj\x86\Debug\RockPaperScissors.Form1.resources
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\obj\x86\Debug\RockPaperScissors.Properties.Resources.resources
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\obj\x86\Debug\RockPaperScissors.csproj.GenerateResource.Cache
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\obj\x86\Debug\RockPaperScissors.exe
+\\h0526sfs02\home$\Students\12546138\My Documents\Programming 2\RockPaperScissors\RockPaperScissors\obj\x86\Debug\RockPaperScissors.pdb
