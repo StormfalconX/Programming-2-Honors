@@ -1,0 +1,10 @@
+H:\CP2\RPSLSConsole\RPSLSConsole\bin\Debug\RPSLSConsole.exe
+H:\CP2\RPSLSConsole\RPSLSConsole\bin\Debug\RPSLSConsole.pdb
+H:\CP2\RPSLSConsole\RPSLSConsole\obj\x86\Debug\RPSLSConsole.csprojResolveAssemblyReference.cache
+H:\CP2\RPSLSConsole\RPSLSConsole\obj\x86\Debug\RPSLSConsole.exe
+H:\CP2\RPSLSConsole\RPSLSConsole\obj\x86\Debug\RPSLSConsole.pdb
+H:\My Documents\Programming 2\Unit 2\RPSLSConsole\RPSLSConsole\obj\x86\Debug\RPSLSConsole.exe
+H:\My Documents\Programming 2\Unit 2\RPSLSConsole\RPSLSConsole\obj\x86\Debug\RPSLSConsole.pdb
+H:\My Documents\Programming 2\Unit 2\RPSLSConsole\RPSLSConsole\bin\Debug\RPSLSConsole.exe
+H:\My Documents\Programming 2\Unit 2\RPSLSConsole\RPSLSConsole\bin\Debug\RPSLSConsole.pdb
+H:\My Documents\Programming 2\Unit 2\RPSLSConsole\RPSLSConsole\obj\x86\Debug\RPSLSConsole.csprojResolveAssemblyReference.cache

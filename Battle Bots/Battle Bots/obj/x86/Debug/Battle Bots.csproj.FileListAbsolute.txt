@@ -1,0 +1,9 @@
+\\H0526SFS02\Home$\Students\12546138\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\bin\Debug\Battle Bots.exe
+\\H0526SFS02\Home$\Students\12546138\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\bin\Debug\Battle Bots.pdb
+\\H0526SFS02\Home$\Students\12546138\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\obj\x86\Debug\Battle Bots.exe
+\\H0526SFS02\Home$\Students\12546138\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\obj\x86\Debug\Battle Bots.pdb
+H:\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\obj\x86\Debug\Battle Bots.exe
+H:\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\obj\x86\Debug\Battle Bots.pdb
+H:\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\bin\Debug\Battle Bots.exe
+H:\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\bin\Debug\Battle Bots.pdb
+H:\My Documents\Programming 2\Unit 2\Battle Bots\Battle Bots\obj\x86\Debug\Battle Bots.csprojResolveAssemblyReference.cache
