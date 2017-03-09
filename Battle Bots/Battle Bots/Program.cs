@@ -10,7 +10,6 @@ namespace Battle_Bots
         static int weaponPower;
         static string enemyWeapon;
 
-        static Vehicle Vehicle = new Vehicle();
         static BattleVehicle BattleVehicle = new BattleVehicle();
 
         static void Main(string[] args)
@@ -56,78 +55,117 @@ namespace Battle_Bots
             else if (Random == 5) 
                 enemyWeapon = "G18";
 
-            Console.WriteLine("The Enemy Weapon is: " + enemyWeapon + "\n");
-            Console.ReadLine();
-            }while (Vehicle.Fuel != 0 || BattleVehicle.Health != 0);
+            Console.WriteLine("The Enemy Weapon is choosing their weapon.......\n");
+
+            Console.WriteLine("The enemy is attacking with " + enemyWeapon + "!\n");
+
+            Console.WriteLine("What do you choose to do?");
+
+            string Decision =Console.ReadLine();
+
+            if (Decision == "Attack" || Decision == "attack")
+            {
+                BattleVehicle.Attack();
+                Console.ReadLine();
+                DisplayPoints();
+            }
+
+            }while (BattleVehicle.Fuel <= 0 || BattleVehicle.Health <= 0);
+
+            Console.WriteLine("/n/n/n GAME OVER");
         }
             
-        static public void Check()
+        static public void CheckAttack()
         {
             if (weaponPower == 1)
             {
                 if (enemyWeapon == "G18" || enemyWeapon == "Trebuchet")
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 1;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
                     BattleVehicle.Points += 1;
+                    Console.WriteLine("You won the battle");
+                }
+                else if (enemyWeapon == "Flamethrower")
+                {
+                    Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                    BattleVehicle.Fuel += 5;
+                    BattleVehicle.Health += 5;
+                    BattleVehicle.Points += 5;
                 }
                 else
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 3;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
                     BattleVehicle.Health = BattleVehicle.Health - 3;
+                    Console.WriteLine("You lost the battle");
                 }
             if (weaponPower == 2)
                 {
                     if (enemyWeapon == "Flamethrower" || enemyWeapon == "Axe")
                     {
-                        Vehicle.Fuel = Vehicle.Fuel - 1;
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
                         BattleVehicle.Points += 1;
+                        Console.WriteLine("You won the battle");
                     }
                     else
                     {
-                        Vehicle.Fuel = Vehicle.Fuel - 3;
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
                         BattleVehicle.Health = BattleVehicle.Health - 3;
+                        Console.WriteLine("You lost the battle");
                     }
                 }
             if (weaponPower == 3)
             {
                 if (enemyWeapon == "Crossbow" || enemyWeapon == "G18")
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 1;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
                     BattleVehicle.Points += 1;
+                    Console.WriteLine("You won the battle");
                 }
                 else
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 3;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
                     BattleVehicle.Health = BattleVehicle.Health - 3;
+                    Console.WriteLine("You lost the battle");
                 }
             }
             if (weaponPower == 4)
             {
                 if (enemyWeapon == "Trebuchet" || enemyWeapon == "Flamethrower")
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 1;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
                     BattleVehicle.Points += 1;
+                    Console.WriteLine("You won the battle");
                 }
                 else
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 3;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
                     BattleVehicle.Health = BattleVehicle.Health - 3;
+                    Console.WriteLine("You lost the battle");
                 }
             }
             if (weaponPower == 5)
             {
                 if (enemyWeapon == "Axe" || enemyWeapon == "Crossbow")
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 1;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
                     BattleVehicle.Points += 1;
+                    Console.WriteLine("You won the battle");
                 }
                 else
                 {
-                    Vehicle.Fuel = Vehicle.Fuel - 3;
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
                     BattleVehicle.Health = BattleVehicle.Health - 3;
+                    Console.WriteLine("You lost the battle");
                 }
             }
             }
+        }//check attack
+
+        static public void DisplayPoints()
+        {
+            Console.WriteLine("Your Health: " + BattleVehicle.Health + "\n");
+            Console.WriteLine("Your Fuel: " + BattleVehicle.Fuel + "\n");
+            Console.WriteLine("Your Points: " + BattleVehicle.Points + "\n");
         }
     }
 }

@@ -7,31 +7,26 @@ namespace Battle_Bots
 {
     abstract class Player
     {
-        abstract public int Attack();
+        abstract public void Attack();
     }
 
-    class Vehicle : Player
-    {
-        public int Fuel { get; set; }
-    }
-
-    sealed class BattleVehicle : Vehicle
+    sealed class BattleVehicle : Player
     {
         public string Name { get; set; }
         public int Points { get; set; }
         public int Health { get; set; }
+        public int Fuel { get; set; }
         public string Weapon { get; set; }
 
-        public override int Attack()
+        public override void Attack()
         {
-            Program.Check();
-            throw new NotImplementedException();
+            Program.CheckAttack();
         }
     }
 
-    sealed class EnemyVehicle : Vehicle
+    sealed class EnemyVehicle : Player
     {
-        public override int Attack()
+        public override void Attack()
         {
             
             throw new NotImplementedException();
