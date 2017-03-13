@@ -22,6 +22,16 @@ namespace Battle_Bots
         {
             Program.CheckAttack();
         }
+
+        public void Defend()
+        {
+            Program.CheckDefend();
+        }
+        public void Absorb()
+        {
+            
+        }
+
     }
 
     sealed class EnemyVehicle : Player

@@ -14,6 +14,10 @@ namespace Battle_Bots
 
         static void Main(string[] args)
         {
+            BattleVehicle.Fuel = 30;
+            BattleVehicle.Health = 30;
+            BattleVehicle.Points = 0;
+
             Console.WriteLine("Welcome to Battle Bots" + "\n" + "\n" + "Enter the Robots Name");
             BattleVehicle.Name = Console.ReadLine();
             Console.WriteLine("\n" + "Welcome to the apocalypse " + BattleVehicle.Name + "\n");
@@ -69,11 +73,23 @@ namespace Battle_Bots
                 Console.ReadLine();
                 DisplayPoints();
             }
+            else if (Decision == "Defend" || Decision == "defend")
+            {
+                BattleVehicle.Defend();
+                Console.ReadLine();
+                DisplayPoints();
+            }
+            else if (Decision == "Absorb" || Decision == "absorb")
+            {
+                BattleVehicle.Absorb();
+                Console.ReadLine();
+                DisplayPoints();
+            }
 
-            }while (BattleVehicle.Fuel <= 0 || BattleVehicle.Health <= 0);
+            }while (BattleVehicle.Fuel != 0 || BattleVehicle.Health != 0);
 
-            Console.WriteLine("/n/n/n GAME OVER");
-        }
+            Console.WriteLine("\n\n\n GAME OVER");
+        }//main
             
         static public void CheckAttack()
         {
@@ -106,6 +122,13 @@ namespace Battle_Bots
                         BattleVehicle.Points += 1;
                         Console.WriteLine("You won the battle");
                     }
+                    else if (enemyWeapon == "Crossbow")
+                    {
+                        Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                        BattleVehicle.Fuel += 5;
+                        BattleVehicle.Health += 5;
+                        BattleVehicle.Points += 5;
+                    }
                     else
                     {
                         BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
@@ -120,6 +143,13 @@ namespace Battle_Bots
                     BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
                     BattleVehicle.Points += 1;
                     Console.WriteLine("You won the battle");
+                }
+                else if (enemyWeapon == "Trebuchet")
+                {
+                    Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                    BattleVehicle.Fuel += 5;
+                    BattleVehicle.Health += 5;
+                    BattleVehicle.Points += 5;
                 }
                 else
                 {
@@ -136,6 +166,13 @@ namespace Battle_Bots
                     BattleVehicle.Points += 1;
                     Console.WriteLine("You won the battle");
                 }
+                else if (enemyWeapon == "Axe")
+                {
+                    Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                    BattleVehicle.Fuel += 5;
+                    BattleVehicle.Health += 5;
+                    BattleVehicle.Points += 5;
+                }
                 else
                 {
                     BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
@@ -151,6 +188,13 @@ namespace Battle_Bots
                     BattleVehicle.Points += 1;
                     Console.WriteLine("You won the battle");
                 }
+                else if (enemyWeapon == "G18")
+                {
+                    Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                    BattleVehicle.Fuel += 5;
+                    BattleVehicle.Health += 5;
+                    BattleVehicle.Points += 5;
+                }
                 else
                 {
                     BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
@@ -161,11 +205,133 @@ namespace Battle_Bots
             }
         }//check attack
 
+        static public void CheckDefend()
+        {
+            if (weaponPower == 1)
+            {
+                if (enemyWeapon == "G18" || enemyWeapon == "Trebuchet")
+                {
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
+                    BattleVehicle.Points += 1;
+                    Console.WriteLine("You won the battle");
+                }
+                else if (enemyWeapon == "Flamethrower")
+                {
+                    Console.WriteLine("The enemy has the same weapon!! How can you gain more points?");
+                    BattleVehicle.Fuel -= 2;
+                    BattleVehicle.Health -= 5;
+                    BattleVehicle.Points += 2;
+                }
+                else
+                {
+                    BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
+                    BattleVehicle.Health = BattleVehicle.Health - 3;
+                    Console.WriteLine("You lost the battle");
+                }
+                if (weaponPower == 2)
+                {
+                    if (enemyWeapon == "Flamethrower" || enemyWeapon == "Axe")
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
+                        BattleVehicle.Points += 1;
+                        Console.WriteLine("You won the battle");
+                    }
+                    else if (enemyWeapon == "Crossbow")
+                    {
+                        Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                        BattleVehicle.Fuel += 5;
+                        BattleVehicle.Health += 5;
+                        BattleVehicle.Points += 5;
+                    }
+                    else
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
+                        BattleVehicle.Health = BattleVehicle.Health - 3;
+                        Console.WriteLine("You lost the battle");
+                    }
+                }
+                if (weaponPower == 3)
+                {
+                    if (enemyWeapon == "Crossbow" || enemyWeapon == "G18")
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
+                        BattleVehicle.Points += 1;
+                        Console.WriteLine("You won the battle");
+                    }
+                    else if (enemyWeapon == "Trebuchet")
+                    {
+                        Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                        BattleVehicle.Fuel += 5;
+                        BattleVehicle.Health += 5;
+                        BattleVehicle.Points += 5;
+                    }
+                    else
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
+                        BattleVehicle.Health = BattleVehicle.Health - 3;
+                        Console.WriteLine("You lost the battle");
+                    }
+                }
+                if (weaponPower == 4)
+                {
+                    if (enemyWeapon == "Trebuchet" || enemyWeapon == "Flamethrower")
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
+                        BattleVehicle.Points += 1;
+                        Console.WriteLine("You won the battle");
+                    }
+                    else if (enemyWeapon == "Axe")
+                    {
+                        Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                        BattleVehicle.Fuel += 5;
+                        BattleVehicle.Health += 5;
+                        BattleVehicle.Points += 5;
+                    }
+                    else
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
+                        BattleVehicle.Health = BattleVehicle.Health - 3;
+                        Console.WriteLine("You lost the battle");
+                    }
+                }
+                if (weaponPower == 5)
+                {
+                    if (enemyWeapon == "Axe" || enemyWeapon == "Crossbow")
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 1;
+                        BattleVehicle.Points += 1;
+                        Console.WriteLine("You won the battle");
+                    }
+                    else if (enemyWeapon == "G18")
+                    {
+                        Console.WriteLine("The enemy has the same weapon!! Attack to absorb and gain more points");
+                        BattleVehicle.Fuel += 5;
+                        BattleVehicle.Health += 5;
+                        BattleVehicle.Points += 5;
+                    }
+                    else
+                    {
+                        BattleVehicle.Fuel = BattleVehicle.Fuel - 3;
+                        BattleVehicle.Health = BattleVehicle.Health - 3;
+                        Console.WriteLine("You lost the battle");
+                    }
+                }
+            }
+        }//check defend
+
+        static public void CheckAbsorb()
+        {
+            
+        }
+
+
+
+
         static public void DisplayPoints()
         {
             Console.WriteLine("Your Health: " + BattleVehicle.Health + "\n");
             Console.WriteLine("Your Fuel: " + BattleVehicle.Fuel + "\n");
             Console.WriteLine("Your Points: " + BattleVehicle.Points + "\n");
-        }
+        }//DisplayPoints
     }
 }
