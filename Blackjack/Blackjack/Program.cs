@@ -37,15 +37,23 @@ namespace Blackjack
 
         static string nameInput = Microsoft.VisualBasic.Interaction.InputBox("Enter your name", "Name Input");
 
+        static Player Dealer = new Player();
+        static Player Fred = new Player(nameInput);
+        //Objects
+
         static int intCardNumber = 0;
+
+
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         static void Main(string[] args)
         {
             Shuffle();
-
+            Deal();
+            Console.ReadLine();
         }
 
-
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Shuffle~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         public static void Shuffle()
         {
@@ -62,20 +70,87 @@ namespace Blackjack
                 CardsPicked[intCard] = true;
                 ShuffledDeck[i, 0] = DeckOfCards[intCard, 0];
                 ShuffledDeck[i, 1] = DeckOfCards[intCard, 1];
+
             }//for      
         }//Shuffle
+
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Deal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         public static void Deal()
         {
             if (intCardNumber < 40)
             {
+                for (int i = 0; i < 2; i++)
+                {
+                    Fred.Cards[i] = ShuffledDeck[intCardNumber, 0];
+                    Fred.CardValues[i] = Convert.ToInt32(ShuffledDeck[intCardNumber, 1]);
+                    intCardNumber++;
+                    Fred.CardsInHand++;
+
+                    Dealer.Cards[i] = ShuffledDeck[intCardNumber, 0];
+                    Dealer.CardValues[i] = Convert.ToInt32(ShuffledDeck[intCardNumber, 1]);
+                    intCardNumber++;
+                    Dealer.CardsInHand++;
+                }//end of loop
+
+                if (Fred.HandTotal() == 21)
+                {
+                    if (Dealer.HandTotal() == 21)
+                    {
+                        Fred.Ties++;
+                        Dealer.Ties++;
+                    }
+                    else
+                    {
+                        Fred.Wins++;
+                        Dealer.Losses++;
+                    }
+                }
+                else
+                {
+                    if (Dealer.HandTotal() == 21)
+                    {
+                        Dealer.Wins++;
+                        Fred.Losses++;
+                    }
+
+                    else
+                    {
+                        if (Fred.HandTotal() > 21)
+                        {
+                            Fred.CardValues[1] = 1;
+                        }
+                        if (Dealer.HandTotal() > 21)
+                        {
+                            Dealer.CardValues[1] = 1;
+                        }
+                    }
+                }
+                Console.WriteLine("Your cards: " + Fred.Cards[0] + " and " + Fred.Cards[1]);
+                Console.WriteLine();
+                Console.WriteLine("Dealer shows: " + Dealer.Cards[1]);
 
             }
-            else
+            else if (intCardNumber >= 40)
             {
+                Console.WriteLine("Your stats are: " + Fred.Wins.ToString() + " Wins, "
+                                                    + Fred.Losses.ToString() + " Losses, "
+                                                    + Fred.Ties.ToString() + " Ties.");
+                Console.WriteLine();
+                Console.WriteLine("Press Enter to shuffle and play again or type 'exit' to end play");
+                string strEnd = Console.ReadLine();
 
+                if (strEnd != "exit")
+                {
+                    Shuffle();
+
+                    string[] args = new string[1];
+                    Main(args);
+                }
+                else
+                    Environment.Exit(0);
             }
-        }
+        }//end of Deal() procedure
 
-    }
-}
+    }//partial class
+}//namespace
