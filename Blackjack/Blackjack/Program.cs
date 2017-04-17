@@ -152,5 +152,17 @@ namespace Blackjack
             }
         }//end of Deal() procedure
 
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Play~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        public static void Play()
+        {
+
+
+
+
+
+        }//end of Play() procedure
+
+
     }//partial class
 }//namespace
