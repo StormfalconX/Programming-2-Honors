@@ -29,7 +29,12 @@ namespace Battle_Bots
         }
         public void Absorb()
         {
-            
+            Program.CheckAbsorb();
+        }
+
+        public void Retreat()
+        {
+            Program.CheckRetreat();
         }
 
     }
