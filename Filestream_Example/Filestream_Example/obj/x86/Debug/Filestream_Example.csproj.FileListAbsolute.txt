@@ -1,0 +1,7 @@
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\bin\Debug\Filestream_Example.exe
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\bin\Debug\Filestream_Example.pdb
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\obj\x86\Debug\Filestream_Example.Form1.resources
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\obj\x86\Debug\Filestream_Example.Properties.Resources.resources
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\obj\x86\Debug\Filestream_Example.csproj.GenerateResource.Cache
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\obj\x86\Debug\Filestream_Example.exe
+\\h0526sfs02\home$\students\12546138\my documents\visual studio 2010\Projects\Filestream_Example\Filestream_Example\obj\x86\Debug\Filestream_Example.pdb
